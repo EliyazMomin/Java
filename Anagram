@@ -1,0 +1,34 @@
+//import array packages
+import java.util.Arrays;
+
+class Anagram {
+    
+    //static method created to return the anagram function
+    static boolean anagramClass(String s1, String s2){
+        //converted the string to char[] Arraya
+        char[] s1Array = s1.toCharArray();
+        char[] s2Array = s2.toCharArray();
+        //Sorting char array in to char array order
+        Arrays.sort(s1Array);
+        System.out.println("Sorted s1 array as:"+ s1Array);
+        System.out.println(s1Array);
+        Arrays.sort(s2Array);
+        System.out.println("Sorted s2 array as:"+ s2Array);
+        System.out.println(s2Array);
+        //return the equals method to confess anagram b/t 2 strings
+        return Arrays.equals(s1Array, s2Array);
+        
+        
+    } 
+    
+    //main class with string arguments
+    public static void main(String[] args) {
+  
+  //delcaration the strings
+        String s1 = "allah";
+        String s2 = "halla";
+        //print the return method from static method
+        System.out.println(anagramClass(s1, s2));
+        
+    }
+}
