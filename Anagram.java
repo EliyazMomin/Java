@@ -17,8 +17,8 @@ class Angram {
     //main class with string arguments
     public static void main(String[] args) {
         //declaration the strings
-        String s1 = "allah";
-        String s2 = "halla";
+        String s1 = "Eliyaz";
+        String s2 = "Afreen";
         //print the return method from static method
         System.out.println(anagramClass(s1, s2));
     }
